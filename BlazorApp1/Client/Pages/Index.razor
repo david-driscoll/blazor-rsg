@@ -1,0 +1,29 @@
+﻿@page "/"
+@inject MediatR.IMediator mediator
+@using BlazorApp1.Shared
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.  @(value)
+
+<button class="btn btn-primary" @onclick="GetStuff">Click me</button>
+<button class="btn btn-primary" @onclick="BadStuff">Click me2</button>
+
+@code {
+    private string value;
+
+    async Task GetStuff()
+    {
+        var response = await mediator.Send(new DoStuff.Request()
+        {
+            Echo = "Person!"
+        });
+        value = response.Pong;
+    }
+
+    async Task BadStuff()
+    {
+        var response = await mediator.Send(new DoStuff.Request());
+        value = response.Pong;
+    }
+}

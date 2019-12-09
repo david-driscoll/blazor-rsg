@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Rocket.Surgery.Conventions" Version="9.0.7" />
+    <PackageReference Include="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Configuration" Version="9.0.7" />
+    <PackageReference Include="Rocket.Surgery.Extensions.DependencyInjection" Version="9.0.7" />
+    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation" Version="6.1.2" />
+    <PackageReference Include="Rocket.Surgery.Extensions.FluentValidation.MediatR" Version="6.1.2" />
+    <PackageReference Include="Rocket.Surgery.Extensions.Logging" Version="9.0.7" />
+    <PackageReference Include="Rocket.Surgery.Extensions.MediatR" Version="7.0.2" />
+    <PackageReference Include="Rocket.Surgery.Linq.Extensions" Version="2.1.0" />
+    <PackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Rocket.Surgery.Reactive.Extensions" Version="2.1.0" />
+  </ItemGroup>
+
+</Project>
